@@ -1,5 +1,5 @@
 <p align="center">  
-Currency Converter is a demo application Utilizing the MVVM + Kotlin + Coroutines + Livedata + Room + Hilt.<br>
+Currency Converter is a demo application Utilizing the MVVM + Kotlin + Navigation Components + Coroutines + Livedata + Room + Hilt.<br>
 
 It allows the user to get a list of currency exchange rates using the Fixer.io API, or work in offline mode. You can then use the rates to exchange for Euros.</br>
 
