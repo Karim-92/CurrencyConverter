@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Currency Converter</string>
+    <string name="bhd">BHD</string>
+    <string name="dummy_rate">0.38</string>
+    <string name="country_flag">Country Flag</string>
+    <string name="main_currency_flag">Main Currency Flag</string>
+    <string name="eur">EUR</string>
+    <string name="edittext_hint">0.0</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
 </resources>

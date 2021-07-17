@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/currenciesFragment">
+
+    <fragment
+        android:id="@+id/currenciesFragment"
+        android:name="com.karim.currencyconverter.ui.fragments.CurrenciesFragment"
+        android:label="Available Rates"
+        tools:layout="@layout/fragment_currencies">
+        <action
+            android:id="@+id/action_currenciesFragment_to_conversionFragment"
+            app:destination="@id/conversionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/conversionFragment"
+        android:name="com.karim.currencyconverter.ui.fragments.ConversionFragment"
+        android:label="Convert"
+        tools:layout="@layout/fragment_conversion">
+        <action
+            android:id="@+id/action_flavorFragment_to_startFragment"
+            app:destination="@id/currenciesFragment"
+            app:popUpTo="@id/currenciesFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

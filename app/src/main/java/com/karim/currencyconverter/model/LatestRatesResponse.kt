@@ -10,9 +10,6 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class LatestRatesResponse(
     @Json(name = "success") val success: Boolean,
-    @Json(name = "timestamp") val timestamp: Int,
-    @Json(name = "base") val base: String,
-    @Json(name = "date") val date: String,
-    @Json(name = "rates") val rates: Rates
+    @Json(name = "rates") val rates: Map<String, String>
 ) : Parcelable
 
